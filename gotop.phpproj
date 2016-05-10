@@ -1,0 +1,88 @@
+"General"
+{
+"ProjectType" = "local"
+"AutoLoadTemplate" = "%s.php;class.%s.php;"
+"IncludeDirs" = ""
+}
+"Configurations"
+{
+    "Release|PHP 5.5"
+    {
+    }
+}
+"Files"
+{
+    "admin_config.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "colorcodes.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "css\\gotop.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "e_header.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "GotoTop.bfproject"
+    {
+    "ProjRelPath" = "T"
+    }
+    "images"
+    {
+    "ProjRelPath" = "T"
+    }
+    "images\\blank_16.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "images\\blank_32.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "index.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "js\\gotop.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "languages"
+    {
+    "ProjRelPath" = "T"
+    }
+    "languages\\English"
+    {
+    "ProjRelPath" = "T"
+    }
+    "languages\\English\\English_global.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "plugin.xml"
+    {
+    "ProjRelPath" = "T"
+    }
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}
+"References"
+{
+}
