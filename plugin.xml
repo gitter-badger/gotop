@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="gotop" lan="LAN_PLUGIN__GOTOP_NAME" version="2.0" date="2012-08-01" compatibility="2.0" installRequired="true" >
+	<author name="Barry Keal G4HDU" url="http://e107.keal.me.uk" />
+	<summary>This plugin puts a Goto Top button on the bottom of a page.</summary>
+	<description lan="LAN_PLUGIN__GOTOP_DESC">This plugin puts a Goto Top button on the bottom of a page.</description>
+	<category>misc</category>
+	<keywords>
+		<word>goto top</word>
+		<word>empty</word>
+		<word>template</word>
+	</keywords>
+	<adminLinks>
+		<link url='admin_config.php' description='Configure Blank Plugin' icon='images/blank_32.png' iconSmall='images/blank_16.png' primary='true' >LAN_CONGIGURE</link>
+		<link url="admin_config.php?mode=options" description="Configure Blank Prefs" icon="manage" >Blank Prefs</link>
+	</adminLinks>
+	<pluginPrefs>
+		<pref name="gotop_active">1</pref>
+		<pref name="gotop_icon">scroll1.png</pref>
+	</pluginPrefs>
+</e107Plugin>
