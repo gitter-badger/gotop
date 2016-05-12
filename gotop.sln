@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{1863889A-00DF-4350-BA39-669CA949CB81}") = "gotop", "gotop.phpproj", "{FC220738-91F6-4AE3-AEE9-073E9D0CCDF1}"
+Project("{1863889A-00DF-4350-BA39-669CA949CB81}") = "gotop", "gotop.phpproj", "{1686C6A8-D5E3-45BD-B036-6CC0EE8794E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|PHP 5.5 = Release|PHP 5.5
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FC220738-91F6-4AE3-AEE9-073E9D0CCDF1}.Release|PHP 5.5.ActiveCfg = Release|PHP 5.5
-		{FC220738-91F6-4AE3-AEE9-073E9D0CCDF1}.Release|PHP 5.5.Deploy.0 = Release|PHP 5.5
+		{1686C6A8-D5E3-45BD-B036-6CC0EE8794E8}.Release|PHP 5.5.ActiveCfg = Release|PHP 5.5
+		{1686C6A8-D5E3-45BD-B036-6CC0EE8794E8}.Release|PHP 5.5.Deploy.0 = Release|PHP 5.5
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
