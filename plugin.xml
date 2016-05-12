@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e107Plugin name="gotop" lan="LAN_PLUGIN__GOTOP_NAME" version="2.0" date="2012-08-01" compatibility="2.0" installRequired="true" >
-	<author name="Barry Keal G4HDU" url="http://e107.keal.me.uk" />
-	<summary>This plugin puts a Goto Top button on the bottom of a page.</summary>
-	<description lan="LAN_PLUGIN__GOTOP_DESC">This plugin puts a Goto Top button on the bottom of a page.</description>
-	<category>misc</category>
-	<keywords>
-		<word>goto top</word>
-		<word>empty</word>
-		<word>template</word>
-	</keywords>
-	<adminLinks>
-		<link url='admin_config.php' description='Configure Blank Plugin' icon='images/blank_32.png' iconSmall='images/blank_16.png' primary='true' >LAN_CONGIGURE</link>
-		<link url="admin_config.php?mode=options" description="Configure Blank Prefs" icon="manage" >Blank Prefs</link>
-	</adminLinks>
-	<pluginPrefs>
-		<pref name="gotop_active">1</pref>
-		<pref name="gotop_icon">scroll1.png</pref>
-	</pluginPrefs>
+<e107Plugin name="Goto Top" lan="LAN_PLUGIN__GOTOP_NAME" version="2.0" date="2012-08-01" compatibility="2.0" installRequired="true" >
+  <author name="Barry Keal G4HDU" url="http://e107.keal.me.uk" />
+  <summary  lan="LAN_PLUGIN__GOTOP_SUMMARY">Add a Goto Top button to every scrollable page.</summary>
+  <description lan="LAN_PLUGIN__GOTOP_DESC">This plugin puts a highly configurable Goto Top button on any page where the bottom has scrolled uo.</description>
+  <category>manage</category>
+  <keywords>
+    <word>goto top</word>
+    <word>scroll top</word>
+    <word>g4hdu</word>
+  </keywords>
+  <adminLinks>
+    <link url='admin_config.php' description='Configure Blank Plugin' icon='images/gotop_32.png' iconSmall='images/gotop_16.png' primary='true' >LAN_CONGIGURE</link>
+  </adminLinks>
+  <pluginPrefs>
+    <pref name="gotop_Active">1</pref>
+    <pref name="gotop_Admin">0</pref>
+    <pref name="gotop_size">48</pref>
+    <pref name="gotop_location">br</pref>
+    <pref name="gotop_HOffset">30</pref>
+    <pref name="gotop_VOffset">30</pref>
+    <pref name="gotop_iconColour">00FF00</pref>
+    <pref name="gotop_iconHover">00FFA0</pref>
+    <pref name="gotop_backgroundColour">FAFAD2</pref>
+    <pref name="gotop_backgroundHover">FFFFF0</pref>
+    <pref name="gotop_Text">1</pref>
+    <pref name="gotop_borderWidth">1</pref>
+    <pref name="gotop_borderShown">1</pref>
+    <pref name="gotop_borderColour">FFFFF0</pref>
+    <pref name="gotop_borderHover">FAFAD2</pref>
+    <pref name="gotop_corners">1</pref>
+  </pluginPrefs>
+  <dependencies>
+    <PHP name='core' min_version='5.2.1' />
+  </dependencies>
 </e107Plugin>

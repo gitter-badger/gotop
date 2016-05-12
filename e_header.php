@@ -1,15 +1,18 @@
 <?php
-/*
- * e107 website system
- *
- * Copyright (C) 2008-2014 e107 Inc (e107.org)
- * Released under the terms and conditions of the
- * GNU General Public License (http://www.gnu.org/licenses/gpl.txt)
- *
- *
- *
- *
-*/
+	/**
+	 * G4HDU Goto Top plugin
+	 *
+	 * Copyright (C) 2008-2016 Barry Keal G4HDU http://e107.keal.me.uk
+	 * blankd under the terms and conditions of the
+	 * GNU General Public License (http://www.gnu.org/licenses/gpl.txt)
+	 *
+	 * @author Barry Keal e107@keal.me.uk>
+	 * @copyright Copyright (C) 2008-2016 Barry Keal G4HDU
+	 * @license GPL
+	 * @version 1.0.0
+	 *
+	 *
+	*/
 
 if (!defined('e107_INIT')) {
     exit;
@@ -59,6 +62,13 @@ class gotop {
     }
     /**
     * gotop::gotop()
+    * 
+	* @param void
+	* @return void
+	* @version 1.0.0
+	* @since 1.0.0
+	* @author Barry Keal G4HDU
+	* 
     */
     public static function gotop()
     {
@@ -241,19 +251,50 @@ class gotop {
             self::outputCSS();  // output the css
         }
     }
+	
+		/**
+		* gotop::resolveColour()
+		* 
+		* @param void
+		* @return void
+		* @version 1.0.0
+		* @since 1.0.0
+		* @author Barry Keal G4HDU
+			* 
+		*/
+
     protected static function resolveColour($thePref)
     {
         $tempColour = self::$gotopPrefs->getPref($thePref, 'trans');
         return ($tempColour == 'trans'?'transparent':'#' . $tempColour);
     }
+	
+		/**
+		* gotop::resolveColour()
+		* 
+		* @param void
+		* @return void
+		* @version 1.0.0
+		* @since 1.0.0
+		* @author Barry Keal G4HDU
+		* 
+		*/
     function outputJS()
     {
         e107::js('inline', 'var gotopText=' . self::$showText . ';', 'jquery'); // loads e107_plugins/gotop/js/gotop.js
         e107::js('gotop', 'js/gotop.js', 'jquery'); // loads e107_plugins/gotop/js/gotop.js
     }
-    function outputCSS()
-    {
-        // echo "bhover".self::$backgroundHover;
+		/**
+		* gotop::resolveColour()
+		* 
+		* @param void
+		* @return void
+		* @version 1.0.0
+		* @since 1.0.0
+		* @author Barry Keal G4HDU
+		* 
+		*/
+    function outputCSS()    {
         e107::css('inline', '
 	/* Goto Top */
 	#gotopContainer{
@@ -284,16 +325,9 @@ class gotop {
 		line-height:0.9em;
 	}
 	#gotopWord{
-	font-size:' . self::$topFontSize . 'px;
-	font-weight:normal;
-
+		font-size:' . self::$topFontSize . 'px;
+		font-weight:normal;
 		line-height:0.99em;
-	}
-	#gotopbox{
-	}
-	.scrollToTop{
-
-
 	}
 	.scrollToTop:hover{
 		text-decoration:none;

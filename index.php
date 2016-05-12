@@ -1,5 +1,5 @@
 <?php
-	/*
+	/**
 	 * G4HDU Goto Top plugin
 	 *
 	 * Copyright (C) 2008-2016 Barry Keal G4HDU http://e107.keal.me.uk
@@ -11,7 +11,7 @@
 	 * @license GPL
 	 * @version 1.0.0
 	 *
-	 *
+	 * @todo Documentation
 	*/
 
 

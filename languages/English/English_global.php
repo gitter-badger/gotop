@@ -1,5 +1,5 @@
 <?php
-	/*
+	/**
 	 * G4HDU Goto Top plugin
 	 *
 	 * Copyright (C) 2008-2016 Barry Keal G4HDU http://e107.keal.me.uk
@@ -17,8 +17,8 @@
 	// This should contain the LANs used in the plugin.xml file.
 
 	define("LAN_PLUGIN__GOTOP_NAME", "Goto top");
-	define("LAN_PLUGIN__GOTOP_DESC",  "This plugin puts a Goto Top button on the bottom of a page.");
-	define("LAN_PLUGIN__GOTOP_", "Blank Link");
+	define("LAN_PLUGIN__GOTOP_SUMMARY", "Add a Goto Top button to every scrollable page.");
+	define("LAN_PLUGIN__GOTOP_DESC",  "This plugin puts a highly configurable Goto Top button on any page where the bottom has scrolled uo.");
 
 
 	define("LAN_PLUGIN__GOTOP_ADMIN_MENU", "Goto Top");
