@@ -34,3 +34,4 @@
     <PHP name='core' min_version='5.2.1' />
   </dependencies>
 </e107Plugin>
+
