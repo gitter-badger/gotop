@@ -23,8 +23,8 @@ gotop::gotop();
 /**
 * gotop
 *
-* @package
-* @author Barry
+* @package gotop
+* @author Barry G4HDU
 * @copyright Copyright (c) 2016
 * @version $Id$
 * @access public

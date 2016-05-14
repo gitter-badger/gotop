@@ -11,7 +11,7 @@
 	 * @license GPL
 	 * @version 1.0.0
 	 *
-	 *
+	 * @todo Convert the colour codes to language file
 	*/
 
 	require_once("../../class2.php");
@@ -19,7 +19,7 @@
 		e107::redirect('admin');
 		exit;
 	}
-	require_once('colorcodes.php');
+	require_once('colorcodes.php'); // read in the array of colour codes. 
 	/**
 	 * This is class plugingotop_admin
 	 * 
@@ -45,9 +45,7 @@
 			);
 
 		/**
-		* Format: 'MODE/ACTION' => array('caption' => 'Menu link title'[, 'url' => '{e_PLUGIN}blank/admin_config.php', 'perm' => '0']);
-		* Additionally, any valid e107::getNav()->admin() key-value pair could be added to the above array
-		*
+		 * 
 		* @var array
 		*/
 		protected $adminMenu = array(
@@ -55,10 +53,7 @@
 			);
 
 		/**
-		* Optional, mode/action aliases, related with 'selected' menu CSS class
-		* Format: 'MODE/ACTION' => 'MODE ALIAS/ACTION ALIAS';
-		* This will mark active main/list menu item, when current page is main/edit
-		*
+		 * 
 		* @var array
 		*/
 		protected $adminMenuAliases = array(
@@ -115,6 +110,11 @@
 
 		/**
 		 * plugingotop_admin_ui::setPrefs()
+		 * 
+		 * Create an array of preference types, values, titles, help text
+		 * for display in the settings page of the plugin manager
+		 * 
+		 * @param void
 		 *
 		 * @return void
 		 * @version 1.0.0
@@ -335,9 +335,12 @@
 					) ;
 		}
 		/**
-		 * Called when class created
+		 * Called when class created by e107. 
+		 * 
 		 *
+		 * @param void 
 		 * @return void
+		 * @uses setPrefs()
 		 *
 		 * @version 1.0.0
 		 * @since 1.0.0
@@ -348,28 +351,7 @@
 		}
 	}
 
-	class plugingotop_admin_form_ui extends e_admin_form_ui {
-		function blank_type($curVal, $mode) // not really necessary since we can use 'dropdown' - but just an example of a custom function.
-		{
-			$frm = e107::getForm();
 
-			$types = array('type_1' => "Type 1", 'type_2' => 'Type 2');
-
-			if ($mode == 'read') {
-				return vartrue($types[$curVal]) . ' (custom!)';
-			}
-
-			if ($mode == 'batch') { // Custom Batch List for blank_type
-				return $types;
-			}
-
-			if ($mode == 'filter') { // Custom Filter List for blank_type
-				return $types;
-			}
-
-			return $frm->select('blank_type', $types, $curVal);
-		}
-	}
 
 	/*
 	 * After initialization we'll be able to call dispatcher via e107::getAdminUI()
