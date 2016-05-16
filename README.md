@@ -1,4 +1,6 @@
 # gotop
+
+[![Join the chat at https://gitter.im/G4HDU/gotop](https://badges.gitter.im/G4HDU/gotop.svg)](https://gitter.im/G4HDU/gotop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 How many times have you been on a website and it has produced a long page and you want to get back to the top. Usually that means that you use the scroll bar at the side, use the scroll wheel on the mouse or repeatedly pressing page up.
 
 This e107plugin can put a *goto top icon* on the page if you have scrolled past the bottom of the screen and clicking on it scrolls you straight to the top of the page. Neat huh?
